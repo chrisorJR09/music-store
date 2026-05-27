@@ -1,0 +1,37 @@
+<div class="auth-container">
+
+  <div class="auth-card">
+
+    <h2 class="text-center mb-4">Registro</h2>
+
+    <form [formGroup]="form" (ngSubmit)="register()">
+
+      <div class="mb-3">
+        <label>Nombre</label>
+        <input class="form-control" formControlName="nombre">
+      </div>
+
+      <div class="mb-3">
+        <label>Correo</label>
+        <input class="form-control" formControlName="email" type="email">
+      </div>
+
+      <div class="mb-3">
+        <label>Contraseña</label>
+        <input class="form-control" formControlName="password" type="password">
+      </div>
+
+      <div class="mb-3">
+        <label>Confirmar contraseña</label>
+        <input class="form-control" formControlName="confirmPassword" type="password">
+      </div>
+
+      <button class="btn btn-success w-100" type="submit">
+        Registrarse
+      </button>
+
+    </form>
+
+  </div>
+
+</div>

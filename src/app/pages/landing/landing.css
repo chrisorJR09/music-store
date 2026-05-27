@@ -1,0 +1,57 @@
+.landing-container {
+  height: 100vh;
+  position: relative;
+  background: url('https://images.unsplash.com/photo-1511379938547-c1f69419868d') center/cover no-repeat;
+  color: white;
+  overflow: hidden;
+}
+
+/* capa oscura */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+  backdrop-filter: blur(4px);
+}
+
+/* contenido encima */
+.content {
+  position: relative;
+  z-index: 2;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+/* título grande */
+.title {
+  font-size: 4rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* subtítulo */
+.subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  opacity: 0.85;
+}
+
+/* animación suave */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* botones */
+.buttons a {
+  transition: transform 0.2s ease;
+}
+
+.buttons a:hover {
+  transform: scale(1.05);
+}
